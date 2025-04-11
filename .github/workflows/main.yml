@@ -1,12 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: whisper4u/NGK_android_kernel_xiaomi_sdm845
-  kernel_branch: q-caf
-  device: dipper
-  clang_version: r365631c
+  kernel_repository: ChopinKernels/kernel_xiaomi_chopin_android_S
+  kernel_branch: S
+  device: chopin
+  clang_version: r383902
   defconfig: |
-    dipper_defconfig
+    chopin_user_defconfig
   kernel_patch: |
     backport-path-umount.patch
   kernelsu_patch: |
